@@ -5,7 +5,7 @@ const fixtures = require(__dirname + "/fixtures.json");
 
 const definitions = require(__dirname + "/definitions.json");
 
-import { XrplDefinitions } from "xrpl-binary-codec-prerelease";
+import { XrplDefinitions } from "@xhbmygod/ripple-binary-codec";
 import fetch from "node-fetch";
 const CustomDefinitions = new XrplDefinitions(definitions);
 

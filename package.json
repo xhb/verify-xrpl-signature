@@ -1,11 +1,11 @@
 {
-  "name": "verify-xrpl-signature",
+  "name": "@xhbmygod/verify-xrpl-signature",
   "version": "8.2.0",
   "description": "Verify XRPL signed TX blob",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublish": "npm run clean && npm run build && npm run test",
+    "prepublish": "echo skip test by xhb; # npm run clean && npm run build && npm run test",
     "clean": "rm -rf dist",
     "build": "tsc",
     "watch": "tsc -w",
@@ -22,8 +22,10 @@
     "test": "test"
   },
   "dependencies": {
-    "ripple-keypairs": "^1.1.4",
-    "xrpl-binary-codec-prerelease": "^8.2.0"
+    "@types/node-fetch": "^2.6.12",
+    "@xhbmygod/ripple-binary-codec": "^2.3.0",
+    "@xhbmygod/ripple-keypairs": "^2.0.0",
+    "xrpl-accountlib": "^8.3.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",

@@ -2,7 +2,7 @@ import {
   decode,
   encodeForSigning,
   encodeForMultisigning,
-} from "xrpl-binary-codec-prerelease";
+} from "@xhbmygod/ripple-binary-codec";
 
 export interface Signer {
   Signer: {
@@ -19,8 +19,8 @@ export interface JsonTransaction {
   NetworkID?: number;
 }
 
-import { XrplDefinitions } from "xrpl-binary-codec-prerelease";
-import { verify, deriveAddress } from "ripple-keypairs";
+import { XrplDefinitions } from "@xhbmygod/ripple-binary-codec";
+import { verify, deriveAddress } from "@xhbmygod/ripple-keypairs";
 
 export type verifySignatureResult = {
   signedBy: string;
